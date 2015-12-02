@@ -36,6 +36,14 @@ dependencies {
     compile 'com.google.guava:guava:18.0'
     compile 'org.glassfish:javax.json:1.0.4'
     		
-    
     testCompile("junit:junit")
+}
+
+task deploy (dependsOn: build){
+    copy {
+        from "build/libs"
+        into "/Users/icart/Downloads/tomcat/webapps"
+
+        include "*.war"
+    }
 }
