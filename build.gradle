@@ -39,9 +39,11 @@ dependencies {
     testCompile("junit:junit")
 }
 
-task deploy (type: Copy, dependsOn: war){
-    from "build/libs"
-    into "/Users/icart/Downloads/tomcat/webapps"
+task deploy (dependsOn: war){
+    copy {
+        from "build/libs"
+        into "/Users/icart/Downloads/tomcat/webapps"
 
-    include "*.war"
+        include "*.war"
+    }
 }
