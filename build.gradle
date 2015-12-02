@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+    	mavenCentral()
+        mavenLocal()
+      	jcenter()
+    }
+}
+
+repositories {
+	mavenCentral()
+    mavenLocal()
+    jcenter()
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'war'
+
+war {
+    baseName = 'jenkins-demo'
+}
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+    providedCompile 'javax.websocket:javax.websocket-api:1.1'
+    compile 'javax.servlet:jstl:1.2'
+    compile 'org.apache.commons:commons-lang3:3.0'
+    compile 'mysql:mysql-connector-java:5.1.36'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.google.guava:guava:18.0'
+    compile 'org.glassfish:javax.json:1.0.4'
+    		
+    
+    testCompile("junit:junit")
+}
