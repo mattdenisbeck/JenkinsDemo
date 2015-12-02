@@ -39,7 +39,7 @@ dependencies {
     testCompile("junit:junit")
 }
 
-task deploy (dependsOn: build){
+task deploy (dependsOn: war){
     copy {
         from "build/libs"
         into "/Users/icart/Downloads/tomcat/webapps"
