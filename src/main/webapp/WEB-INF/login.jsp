@@ -42,7 +42,7 @@
 			<div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
 				<div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
 					<h3>Login to Chat</h3>
-					<h4>new test 3:40</h4>
+					<h4>new test 3:44</h4>
 					<div class="mdl-card mdl-shadow--2dp">
 						<div class="mdl-card__supporting-text">
 							<form method="post" action="users" class="ng-pristine ng-valid">
